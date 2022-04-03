@@ -1,11 +1,19 @@
 {
   "name": "politech_web",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MVPavlyk/politech_web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MVPavlyk/politech_web/issues"
+  },
+  "homepage": "https://github.com/MVPavlyk/politech_web#readme",
+  "description": ""
 }

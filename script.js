@@ -3,17 +3,18 @@
 /*
 let wordsArray = ['hello', 'word']
 
-const arrayToString = (arr) => {
-    return arr.join(" ")
-}
+const arrayToString = (arr) => arr.join(" ");
 
-console.log(arrayToString(wordsArray));*/
+console.log(arrayToString(wordsArray));
+*/
 
 /* Написати функцію, яка першу літеру кожного слова речення переведе у верхній регістр */
 
 /*
 let string = 'lorem ipsum dolor'
+*/
 
+/*
 const firstLetterUp = (str) => {
     const wordArray = str.split(' ');
     const upperCaseArray = []
@@ -107,5 +108,4 @@ const arr = [3,4,2,1]
 console.log(mergeSort(arr));
 
 */
-
 
