@@ -42,8 +42,8 @@ const findShop = (name) => {
 
 const updateShop = (oldName, newName, newType) => {
     let index = shopsCollection.indexOf(findShop(oldName));
-    if (newName !== '') shopsCollection[index].name = newName;
-    if (newType !== '') shopsCollection[index].type = newType;
+    if (newName !== '' && newName !== undefined) shopsCollection[index].name = newName;
+    if (newType !== '' && newType !== undefined) shopsCollection[index].type = newType;
 };
 
 /* Get shop list */

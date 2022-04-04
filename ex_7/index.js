@@ -17,7 +17,7 @@ const itemToStorage = (numberOfStorage, nameOfItem, priceOfItem) => {
     someStorage.items_array.push(someItem);
 };
 
-const itemFromStorrageToStorrage = (storageNum1, nameOfItem, storageNum2) => {
+const itemFromStorageToStorage = (storageNum1, nameOfItem, storageNum2) => {
     const storage1 = storage.findStorage(storageNum1);
     const storage2 = storage.findStorage(storageNum2);
     const someItem = item.findItem(nameOfItem);
@@ -25,7 +25,7 @@ const itemFromStorrageToStorrage = (storageNum1, nameOfItem, storageNum2) => {
     storage1.items_array = storage1.items_array.filter(deletedItem => deletedItem !== someItem);
 };
 
-const itemFromStorrageToShop = (storageNum, nameOfItem, nameOfShop) => {
+const itemFromStorageToShop = (storageNum, nameOfItem, nameOfShop) => {
     const someStorage = storage.findStorage(storageNum);
     const someShop = shop.findShop(nameOfShop);
     const someItem = item.findItem(nameOfItem);
@@ -33,7 +33,7 @@ const itemFromStorrageToShop = (storageNum, nameOfItem, nameOfShop) => {
     someStorage.items_array = someStorage.items_array.filter(deletedItem => deletedItem !== someItem);
 };
 
-const itemFromShopToStorrage = (nameOfShop, nameOfItem, storageNum) => {
+const itemFromShopToStorage = (nameOfShop, nameOfItem, storageNum) => {
     const someStorage = storage.findStorage(storageNum);
     const someShop = shop.findShop(nameOfShop);
     const someItem = item.findItem(nameOfItem);
@@ -61,6 +61,16 @@ storage.getStorageList()
 storrage1 = storage.findStorage(1)
 console.log(storrage1.items_array);
 
-itemFromStorrageToStorrage(1, 'АК-74', 2)
+itemFromStorageToStorage(1, 'АК-74', 2)
+
+storage.getStorageList()
+
+itemFromStorageToShop(1, 'АК-74', 'Ibis')
+
+shop.getShopList()
+
+shop.updateShop('Ibis', 'Їбі', '')
+
+shop.getShopList()
 
 storage.getStorageList()
